@@ -10,7 +10,9 @@ namespace Bookself.Models
     {
         [Key]
         public int ID { get; set; }
+
+        [Display(Name = "Category")]
         public string name { get; set; }
-        public virtual ICollection<book> Books { get; set; }
+        public virtual ICollection<book> Books { get; set; }//Navigation Property
     }
 }
